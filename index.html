@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>معرض اتمام</title>
+    <meta
+      name="description"
+      content="tmm Expo - معرض اتمام للتجارة والأعمال والتكنولوجيا. Béni Abbès, Algeria. 31/12/2026 - 01/01/2027."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Reem+Kufi:wght@500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page" dir="rtl" lang="ar">
+      <div class="progress" id="progress" aria-hidden="true"></div>
+
+      <header class="top">
+        <div class="bar">
+          <a class="brand" href="#top" aria-label="tmm Expo">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path
+                d="M2 41C12 29 22 31 30 37c6 4 12 0 16-4v11H2z"
+                fill="#bb813e"
+              />
+              <path
+                d="M24 33c0-8 0-14 0-19"
+                stroke="#043264"
+                stroke-width="2.6"
+                stroke-linecap="round"
+                fill="none"
+              />
+              <g
+                stroke="#bb813e"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                fill="none"
+              >
+                <path d="M24 14c-5 1-10 4-13 9" />
+                <path d="M24 14c-6-5-12-5-16-2" />
+                <path d="M24 14c0-5 1-8 3-11" />
+                <path d="M24 14c6-5 12-5 16-2" />
+                <path d="M24 14c5 1 10 4 13 9" />
+              </g>
+            </svg>
+            <span
+              ><b data-i="brand_name">معرض اتمام</b
+              ><small data-i="brand_sub">الطبعة الأولى · بني عباس</small></span
+            >
+          </a>
+          <nav class="nav" aria-label="Main">
+            <a href="#about" data-i="nav_about">عن المعرض</a>
+            <a href="#tamima" data-i="nav_tamima">تميمة</a>
+            <a href="#join" data-i="nav_join">لماذا تشارك</a>
+            <a href="#place" data-i="nav_place">الموقع</a>
+          </nav>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="ar" aria-pressed="true">AR</button>
+            <button type="button" data-lang="fr" aria-pressed="false">
+              FR
+            </button>
+            <button type="button" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+          <a class="btn btn-gold" href="#register" data-i="cta_register"
+            >سجّل حضورك</a
+          >
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" id="hero">
+          <div class="aurora" aria-hidden="true">
+            <i class="blob b1"></i><i class="blob b2"></i
+            ><i class="blob b3"></i>
+          </div>
+          <div class="dots" aria-hidden="true"></div>
+          <svg
+            class="circuit"
+            viewBox="0 0 560 700"
+            preserveAspectRatio="xMinYMax slice"
+            aria-hidden="true"
+            fill="none"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <defs>
+              <path
+                id="t1"
+                pathLength="100"
+                d="M40 700V560H140V450H230V340H300"
+              />
+              <path id="t2" pathLength="100" d="M150 700V620H280V500H350" />
+              <path id="t3" pathLength="100" d="M330 700V590H410V430H490V300" />
+              <path id="t4" pathLength="100" d="M20 330H100V240H190V170H260" />
+            </defs>
+            <use href="#t1" class="base" />
+            <use href="#t1" class="flow" />
+            <use href="#t2" class="base" />
+            <use href="#t2" class="flow f2" />
+            <use href="#t3" class="base" />
+            <use href="#t3" class="flow f3" />
+            <use href="#t4" class="base" />
+            <use href="#t4" class="flow f2" />
+            <g fill="#8cc8ff">
+              <circle cx="300" cy="340" r="5" />
+              <circle cx="350" cy="500" r="5" />
+              <circle cx="490" cy="300" r="5" />
+              <circle cx="260" cy="170" r="5" />
+            </g>
+          </svg>
+
+          <div class="wrap hero-grid">
+            <div>
+              <div class="date-chip rise d1">
+                <span data-i="chip_date">31 ديسمبر 2026 – 01 جانفي 2027</span
+                ><i></i><span data-i="chip_place">بني عباس، الجزائر</span>
+              </div>
+              <h1 class="rise d2" data-i="h1">معرض اتمام</h1>
+              <div class="h1-sub rise d2" data-i="h1_sub">
+                للتجارة والأعمال والتكنولوجيا
+              </div>
+              <div class="edition rise d3" data-i="edition">الطبعة الأولى</div>
+              <p class="lead rise d3" data-i="lead">
+                يومان للتجار وأصحاب الأعمال والمبتكرين في بني عباس، بين أصالة
+                الواحة وروح التكنولوجيا.
+              </p>
+              <div class="count rise d4" role="timer">
+                <div>
+                  <strong id="c-d">00</strong><small data-i="cd_d">أيام</small>
+                </div>
+                <div>
+                  <strong id="c-h">00</strong><small data-i="cd_h">ساعات</small>
+                </div>
+                <div>
+                  <strong id="c-m">00</strong><small data-i="cd_m">دقائق</small>
+                </div>
+                <div>
+                  <strong id="c-s">00</strong><small data-i="cd_s">ثوانٍ</small>
+                </div>
+              </div>
+              <p class="count-note rise d4" id="count-note"></p>
+              <div class="cta-row rise d5">
+                <a class="btn btn-gold" href="#register"
+                  ><span data-i="cta_register">سجّل حضورك</span
+                  ><svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                ></a>
+                <a class="btn btn-ghost" href="#about" data-i="cta2"
+                  >تعرّف على المعرض</a
+                >
+              </div>
+            </div>
+            <div class="stage-host rise d3" data-stage="hero"></div>
+          </div>
+
+          <svg
+            class="hero-dunes"
+            viewBox="0 0 1440 120"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 120V74C170 22 330 22 520 62c200 42 340 40 520-4 150-30 280-22 400 12V120z"
+              fill="var(--bg)"
+            />
+            <path
+              d="M0 74C170 22 330 22 520 62c200 42 340 40 520-4 150-30 280-22 400 12"
+              fill="none"
+              stroke="#e0aa62"
+              stroke-width="3"
+            />
+          </svg>
+        </section>
+
+        <div class="ribbon" dir="ltr" aria-hidden="true">
+          <div class="track" id="ribbon"></div>
+        </div>
+
+        <section class="stats" aria-label="Key figures">
+          <div class="wrap">
+            <ul>
+              <li>
+                <b class="num" data-to="50" data-suffix="+">50+</b
+                ><span data-i="st_ex">عارض</span>
+              </li>
+              <li>
+                <b class="num" data-to="30000" data-suffix="+">30,000+</b
+                ><span data-i="st_vis">زائر متوقع</span>
+              </li>
+              <li>
+                <b class="num" data-to="2" data-suffix="">2</b
+                ><span data-i="st_days">يومان من اللقاءات</span>
+              </li>
+              <li>
+                <b class="num" data-to="1" data-suffix="">1</b
+                ><span data-i="st_ed">الطبعة الأولى</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec" id="about">
+          <div class="wrap">
+            <div class="bento">
+              <article class="card c-about rv">
+                <div>
+                  <div class="eyebrow" data-i="about_eyebrow">عن المعرض</div>
+                  <h2 data-i="about_title">
+                    مكان واحد يجمع التجارة والأعمال والتكنولوجيا
+                  </h2>
+                </div>
+                <div>
+                  <p data-i="about_p1">
+                    معرض اتمام للتجارة والأعمال والتكنولوجيا تنطلق طبعته الأولى
+                    في بني عباس يوم 31 ديسمبر 2026 وتستمر حتى 01 جانفي 2027.
+                  </p>
+                  <p data-i="about_p2">
+                    يلتقي فيه أكثر من 50 عارضًا من التجار والشركات وأصحاب
+                    المشاريع مع جمهور يُتوقع أن يتجاوز 30 ألف زائر، ويقرّب
+                    الحلول الرقمية من النشاط التجاري اليومي.
+                  </p>
+                </div>
+                <svg
+                  class="pulse"
+                  viewBox="0 0 800 70"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  stroke-width="1.6"
+                  aria-hidden="true"
+                >
+                  <path
+                    class="base"
+                    pathLength="100"
+                    d="M0 52H180V30H300V52H520V20H640V44H800"
+                  />
+                  <path
+                    class="flow"
+                    pathLength="100"
+                    d="M0 52H180V30H300V52H520V20H640V44H800"
+                  />
+                </svg>
+              </article>
+
+              <article class="card c-dates rv">
+                <div class="lbl" data-i="dc_title">الموعد</div>
+                <div class="days">
+                  <div class="day">
+                    <b>31</b
+                    ><span
+                      ><span data-i="day1_m">ديسمبر 2026</span
+                      ><small data-i="day1_w">الخميس</small></span
+                    >
+                  </div>
+                  <div class="sep"></div>
+                  <div class="day">
+                    <b>01</b
+                    ><span
+                      ><span data-i="day2_m">جانفي 2027</span
+                      ><small data-i="day2_w">الجمعة</small></span
+                    >
+                  </div>
+                </div>
+                <p class="note" data-i="dc_note">
+                  تُعلن مواعيد الاستقبال والبرنامج التفصيلي قريبًا.
+                </p>
+              </article>
+
+              <article class="card c-pillar rv">
+                <div class="ico dr">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M6 18l4-10h28l4 10" />
+                    <path
+                      d="M6 18c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6c0 4 3 6 6 6s6-2 6-6"
+                    />
+                    <path d="M9 26v14h30V26" />
+                    <path d="M20 40V31h8v9" />
+                  </svg>
+                </div>
+                <h3 data-i="p1_t">التجارة</h3>
+                <p data-i="p1_d">
+                  عارضون من قطاعات مختلفة يقدّمون منتجاتهم وخدماتهم للجمهور
+                  مباشرة.
+                </p>
+              </article>
+              <article class="card c-pillar rv">
+                <div class="ico dr">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <rect x="5" y="14" width="38" height="26" rx="4" />
+                    <path d="M17 14v-4a3 3 0 013-3h8a3 3 0 013 3v4" />
+                    <path d="M5 26h38" />
+                    <path d="M21 26v4h6v-4" />
+                  </svg>
+                </div>
+                <h3 data-i="p2_t">الأعمال</h3>
+                <p data-i="p2_d">
+                  فرصة للقاء الشركاء والموردين وبناء علاقات مهنية جديدة داخل
+                  الجزائر وخارجها.
+                </p>
+              </article>
+              <article class="card c-pillar rv">
+                <div class="ico dr">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <rect x="13" y="13" width="22" height="22" rx="3" />
+                    <rect x="19" y="19" width="10" height="10" rx="1.5" />
+                    <path
+                      d="M18 13V6M24 13V6M30 13V6M18 42v-7M24 42v-7M30 42v-7M13 18H6M13 24H6M13 30H6M42 18h-7M42 24h-7M42 30h-7"
+                    />
+                  </svg>
+                </div>
+                <h3 data-i="p3_t">التكنولوجيا</h3>
+                <p data-i="p3_d">
+                  حلول رقمية وأدوات حديثة تساعد المؤسسات والتجار على النمو.
+                </p>
+              </article>
+
+              <article class="card c-place rv" id="place">
+                <div>
+                  <div class="eyebrow" data-i="pl_eyebrow">المكان</div>
+                  <div class="place-name" data-i="pl_name">
+                    بني عباس، الجزائر
+                  </div>
+                  <p data-i="pl_p">
+                    تنطلق الطبعة الأولى في الجنوب الغربي الجزائري، بين الواحة
+                    والكثبان.
+                  </p>
+                  <a
+                    class="btn btn-navy"
+                    href="https://www.google.com/maps/search/?api=1&query=B%C3%A9ni+Abb%C3%A8s%2C+Algeria"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i="pl_btn">افتح الخريطة</span
+                    ><svg viewBox="0 0 24 24">
+                      <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                  ></a>
+                </div>
+                <svg class="scene" viewBox="0 0 520 240" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#043264" />
+                      <stop offset=".62" stop-color="#2a74b8" />
+                      <stop offset="1" stop-color="#e8b878" />
+                    </linearGradient>
+                    <radialGradient id="sun">
+                      <stop offset="0" stop-color="#ffe3b0" />
+                      <stop offset="1" stop-color="#ffe3b0" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                  <rect width="520" height="240" fill="url(#sky)" />
+                  <g fill="#fff">
+                    <circle class="st" cx="60" cy="34" r="1.6" />
+                    <circle class="st" cx="150" cy="60" r="1.2" />
+                    <circle class="st" cx="230" cy="26" r="1.8" />
+                    <circle class="st" cx="300" cy="64" r="1.2" />
+                    <circle class="st" cx="450" cy="30" r="1.6" />
+                    <circle class="st" cx="490" cy="76" r="1.2" />
+                  </g>
+                  <circle
+                    class="sun-glow"
+                    cx="372"
+                    cy="150"
+                    r="72"
+                    fill="url(#sun)"
+                  />
+                  <circle cx="372" cy="150" r="26" fill="#ffe3b0" />
+                  <g class="dn1">
+                    <path
+                      d="M-40 200C40 150 120 150 200 188c80 34 160 26 250-12 30-12 50-10 110 0V260H-40z"
+                      fill="#bb813e"
+                      opacity=".6"
+                    />
+                  </g>
+                  <g class="dn2">
+                    <path
+                      d="M-40 224C60 186 150 190 230 214c80 22 170 12 330-18V260H-40z"
+                      fill="#a46d2e"
+                    />
+                  </g>
+                  <path
+                    d="M112 236C110 200 118 170 112 140"
+                    stroke="#06284f"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                  <g
+                    class="fr"
+                    stroke="#06284f"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    fill="none"
+                  >
+                    <path d="M112 140c-18-4-34 4-42 20" />
+                    <path d="M112 140c-14-18-32-18-42-10" />
+                    <path d="M112 140c0-16 4-28 12-36" />
+                    <path d="M112 140c16-18 34-18 46-10" />
+                    <path d="M112 140c18-4 34 4 42 20" />
+                  </g>
+                  <path
+                    d="M-20 238C120 220 260 244 560 226V260H-20z"
+                    fill="#06284f"
+                  />
+                </svg>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec tm" id="tamima">
+          <div class="aurora" aria-hidden="true"><i class="blob b1"></i></div>
+          <div class="wrap tm-grid">
+            <div class="stage-host" data-stage="play"></div>
+            <div>
+              <div class="eyebrow" data-i="ts_eyebrow">تميمة المعرض</div>
+              <h2 data-i="ts_title">تعرّف على تميمة</h2>
+              <p class="lead2" data-i="ts_p">
+                العمامة الذكية: رمز الأصالة بروح التكنولوجيا. العمامة الزرقاء
+                والثوب المزيّن بالنخيل والكثبان يحملان هوية الواحة، وخطوط
+                الدوائر الإلكترونية والسماعة المضيئة والجهاز اللوحي تحمل روح
+                الرقمنة.
+              </p>
+              <p class="hint" data-i="ts_hint">
+                اضغط على أحد الأوضاع لترى كيف تتفاعل تميمة.
+              </p>
+              <div class="poses" id="poses" role="group">
+                <button
+                  type="button"
+                  class="pose"
+                  data-pose="welcome"
+                  aria-pressed="true"
+                >
+                  <img data-av="welcome" alt="" width="48" height="48" /><span
+                    data-i="ps_welcome"
+                    >الترحيب</span
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="pose"
+                  data-pose="tech"
+                  aria-pressed="false"
+                >
+                  <img data-av="tech" alt="" width="48" height="48" /><span
+                    data-i="ps_tech"
+                    >التكنولوجيا</span
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="pose"
+                  data-pose="ambition"
+                  aria-pressed="false"
+                >
+                  <img data-av="ambition" alt="" width="48" height="48" /><span
+                    data-i="ps_ambition"
+                    >الطموح</span
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="pose"
+                  data-pose="place"
+                  aria-pressed="false"
+                >
+                  <img data-av="place" alt="" width="48" height="48" /><span
+                    data-i="ps_place"
+                    >بني عباس</span
+                  >
+                </button>
+              </div>
+              <div class="swatches">
+                <span class="swatch"
+                  ><i style="background: #043264"></i
+                  ><span data-i="sw1">أزرق ملكي</span></span
+                >
+                <span class="swatch"
+                  ><i style="background: #3180c2"></i
+                  ><span data-i="sw2">أزرق سماوي</span></span
+                >
+                <span class="swatch"
+                  ><i style="background: #bb813e"></i
+                  ><span data-i="sw3">ذهبي الكثبان</span></span
+                >
+                <span class="swatch"
+                  ><i style="background: #ede5db"></i
+                  ><span data-i="sw4">كريمي الرمال</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec" id="join">
+          <div class="wrap">
+            <div class="join-head rv">
+              <div>
+                <div class="eyebrow" data-i="jn_eyebrow">لماذا تشارك</div>
+                <h2 data-i="jn_title">للزائر وللعارض</h2>
+              </div>
+              <div class="tabs" role="tablist">
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-v"
+                  aria-selected="true"
+                  aria-controls="join-panel"
+                  data-tab="v"
+                  data-i="tab_v"
+                >
+                  زائر
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-e"
+                  aria-selected="false"
+                  aria-controls="join-panel"
+                  data-tab="e"
+                  data-i="tab_e"
+                >
+                  عارض
+                </button>
+              </div>
+            </div>
+            <div
+              class="join-body"
+              id="join-panel"
+              role="tabpanel"
+              aria-labelledby="tab-v"
+            >
+              <ul class="join-list" id="join-list"></ul>
+              <div class="join-big">
+                <b id="join-num" dir="ltr">50+</b
+                ><span id="join-cap" data-i="v_cap">عارض لتكتشفهم</span>
+                <svg
+                  viewBox="0 0 400 90"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  stroke-width="1.6"
+                  aria-hidden="true"
+                >
+                  <path
+                    pathLength="100"
+                    stroke="rgba(140,200,255,.3)"
+                    d="M0 70H90V40H180V70H290V30H400"
+                  />
+                  <path
+                    pathLength="100"
+                    stroke="#4cc9ff"
+                    stroke-dasharray="9 91"
+                    style="animation: flow 5s linear infinite"
+                    d="M0 70H90V40H180V70H290V30H400"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec" id="register" style="padding-block-start: 0">
+          <div class="wrap">
+            <div class="reg-panel rv">
+              <div>
+                <div class="eyebrow" data-i="rg_eyebrow">التسجيل</div>
+                <h2 data-i="rg_title">كن جزءًا من الطبعة الأولى</h2>
+                <p class="lead2" data-i="rg_p">
+                  اترك بياناتك واختر صفتك، زائرًا أو عارضًا، وسنتواصل معك
+                  بتفاصيل المشاركة.
+                </p>
+                <div class="peek">
+                  <img
+                    class="tamima-img"
+                    data-tamima
+                    alt=""
+                    width="479"
+                    height="841"
+                  /><span class="hi" data-i="hi">أهلًا بك!</span>
+                </div>
+              </div>
+              <form id="reg-form" novalidate>
+                <div class="field">
+                  <input
+                    id="f-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder=" "
+                    required
+                  /><label for="f-name" data-i="f_name">الاسم الكامل</label>
+                </div>
+                <div class="field">
+                  <input
+                    id="f-contact"
+                    name="contact"
+                    type="text"
+                    autocomplete="email"
+                    placeholder=" "
+                    required
+                  /><label for="f-contact" data-i="f_contact"
+                    >رقم الهاتف أو البريد الإلكتروني</label
+                  >
+                </div>
+                <div class="field sel">
+                  <select id="f-role" name="role">
+                    <option value="visitor" data-i="r_visitor">زائر</option>
+                    <option value="exhibitor" data-i="r_exhibitor">
+                      عارض
+                    </option></select
+                  ><label for="f-role" data-i="f_role"
+                    >أرغب في الحضور بصفتي</label
+                  >
+                </div>
+                <button class="btn btn-navy" type="submit">
+                  <span data-i="f_submit">إرسال الطلب</span
+                  ><svg viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+                <div
+                  class="form-status"
+                  id="form-status"
+                  role="status"
+                  aria-live="polite"
+                ></div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrap">
+          <b data-i="ft_name">معرض اتمام للتجارة والأعمال والتكنولوجيا</b>
+          <span data-i="ft_line"
+            >الطبعة الأولى · بني عباس، الجزائر · 31 ديسمبر 2026 – 01 جانفي
+            2027</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <template id="tpl-stage">
+      <div class="stage" data-act="">
+        <div class="halo"></div>
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="palms" aria-hidden="true">
+          <svg class="pm p1" viewBox="0 0 100 160">
+            <path
+              d="M52 160C50 110 54 70 48 40"
+              stroke="#bb813e"
+              stroke-width="7"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <g
+              class="fr"
+              stroke="#bb813e"
+              stroke-width="5"
+              stroke-linecap="round"
+              fill="none"
+            >
+              <path d="M48 40C30 36 14 44 6 60" />
+              <path d="M48 40C34 22 16 22 6 30" />
+              <path d="M48 40C48 24 52 12 60 4" />
+              <path d="M48 40C64 24 82 24 94 32" />
+              <path d="M48 40C66 38 82 48 90 64" />
+            </g>
+          </svg>
+          <svg class="pm p2" viewBox="0 0 100 160">
+            <path
+              d="M52 160C50 110 54 70 48 40"
+              stroke="#e0aa62"
+              stroke-width="7"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <g
+              class="fr"
+              stroke="#e0aa62"
+              stroke-width="5"
+              stroke-linecap="round"
+              fill="none"
+            >
+              <path d="M48 40C30 36 14 44 6 60" />
+              <path d="M48 40C34 22 16 22 6 30" />
+              <path d="M48 40C48 24 52 12 60 4" />
+              <path d="M48 40C64 24 82 24 94 32" />
+              <path d="M48 40C66 38 82 48 90 64" />
+            </g>
+          </svg>
+        </div>
+        <div class="bubble" role="status" aria-live="polite">
+          <span class="bubble-t"></span>
+        </div>
+        <div class="tilt">
+          <div class="shadow"></div>
+          <button class="jumper" type="button">
+            <span class="floater">
+              <img
+                class="tamima-img"
+                data-tamima
+                alt=""
+                width="479"
+                height="841"
+              />
+              <span class="led"><i></i></span><span class="sole s1"></span
+              ><span class="sole s2"></span>
+            </span>
+          </button>
+        </div>
+        <div class="orb o1">
+          <span class="chip3"
+            ><svg viewBox="0 0 24 24">
+              <path d="M3 9l2-5h14l2 5" />
+              <path
+                d="M3 9c0 2 1.5 3 3 3s3-1 3-3c0 2 1.5 3 3 3s3-1 3-3c0 2 1.5 3 3 3s3-1 3-3"
+              />
+              <path d="M5 13v7h14v-7" /></svg
+            ><b data-i="orb1">تجارة</b></span
+          >
+        </div>
+        <div class="orb o2">
+          <span class="chip3"
+            ><svg viewBox="0 0 24 24">
+              <rect x="3" y="7" width="18" height="13" rx="2.5" />
+              <path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2" />
+              <path d="M3 13h18" /></svg
+            ><b data-i="orb2">أعمال</b></span
+          >
+        </div>
+        <div class="orb o3">
+          <span class="chip3"
+            ><svg viewBox="0 0 24 24">
+              <rect x="7" y="7" width="10" height="10" rx="2" />
+              <path
+                d="M10 7V3M14 7V3M10 21v-4M14 21v-4M7 10H3M7 14H3M21 10h-4M21 14h-4"
+              /></svg
+            ><b data-i="orb3">رقمية</b></span
+          >
+        </div>
+        <div class="sticker" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <path
+                id="circ"
+                d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0"
+              />
+            </defs>
+            <text>
+              <textPath href="#circ">
+                TMM EXPO • 31.12.2026 • 01.01.2027 •
+              </textPath>
+            </text>
+          </svg>
+          <div class="core">1</div>
+        </div>
+      </div>
+    </template>
+    <script src="js/app.js"></script>
+  </body>
+</html>
