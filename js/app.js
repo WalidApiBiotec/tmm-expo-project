@@ -339,39 +339,129 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 
 /* ---------- registration ---------- */
-/* Set FORM_ENDPOINT to a form-handling URL (for example Formspree) once the site is hosted. */
+
+// URL de déploiement de Google Apps Script.
+// Utiliser l'URL complète se terminant par /exec.
 var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxlf5LKgYu9JJBFSUXtJmBOrOzrz5UMCL2-qejap_O8ZOnEB3CNIsv2dxIqLdyNEsSlHA/exec';
-var form = $('#reg-form'), statusEl = $('#form-status'), roleSel = $('#f-role');
+
+var form = $('#reg-form');
+var statusEl = $('#form-status');
+var roleSel = $('#f-role');
+
 function setType(type, focus) {
   roleSel.value = type;
-  $$('.opt').forEach(function (o) { o.setAttribute('aria-pressed', o.getAttribute('data-type') === type ? 'true' : 'false'); });
+
+  $$('.opt').forEach(function (option) {
+    option.setAttribute(
+      'aria-pressed',
+      option.getAttribute('data-type') === type ? 'true' : 'false'
+    );
+  });
+
   $('#w-needs').hidden = type !== 'exhibitor';
   $('#w-follow').hidden = type === 'exhibitor';
+
   statusEl.textContent = '';
-  if (focus) $('#f-name').focus();
+
+  if (focus) {
+    $('#f-name').focus();
+  }
 }
-$$('.opt').forEach(function (o) { o.addEventListener('click', function () { setType(o.getAttribute('data-type'), true); }); });
-roleSel.addEventListener('change', function () { setType(roleSel.value, false); });
-$$('[data-reg]').forEach(function (a) { a.addEventListener('click', function () { setType(a.getAttribute('data-reg'), false); }); });
+
+$$('.opt').forEach(function (option) {
+  option.addEventListener('click', function () {
+    setType(option.getAttribute('data-type'), true);
+  });
+});
+
+roleSel.addEventListener('change', function () {
+  setType(roleSel.value, false);
+});
+
+$$('[data-reg]').forEach(function (link) {
+  link.addEventListener('click', function () {
+    setType(link.getAttribute('data-reg'), false);
+  });
+});
+
 setType('exhibitor', false);
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  var v = function (id) { return $(id).value.trim(); };
-  var name = v('#f-name'), phone = v('#f-phone'), email = v('#f-email');
-  if (!name || (!phone && !email)) { statusEl.textContent = t('msg_empty'); return; }
-  if (!FORM_ENDPOINT) { statusEl.textContent = t('msg_closed'); return; }
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  function value(selector) {
+    var element = $(selector);
+    return element ? element.value.trim() : '';
+  }
+
+  var name = value('#f-name');
+  var phone = value('#f-phone');
+  var email = value('#f-email');
+
+  if (!name || (!phone && !email)) {
+    statusEl.textContent = t('msg_empty');
+    return;
+  }
+
+  if (!FORM_ENDPOINT) {
+    statusEl.textContent = t('msg_closed');
+    return;
+  }
+
+  var submitButton = form.querySelector('[type="submit"]');
+
+  if (submitButton) {
+    submitButton.disabled = true;
+  }
+
   statusEl.textContent = t('msg_sending');
-  var body = { name: name, organisation: v('#f-org'), phone: phone, email: email, type: roleSel.value, description: v('#f-desc'),
-    needs: roleSel.value === 'exhibitor' ? v('#f-needs') : '', sponsor_contact: roleSel.value !== 'exhibitor' && $('#f-follow').checked };
+
+  var payload = {
+    name: name,
+    organisation: value('#f-org'),
+    phone: phone,
+    email: email,
+    type: roleSel.value,
+    description: value('#f-desc'),
+    needs: roleSel.value === 'exhibitor'
+      ? value('#f-needs')
+      : '',
+    sponsor_contact: (
+      roleSel.value !== 'exhibitor' &&
+      $('#f-follow').checked
+    ) ? 'true' : 'false',
+    lang: lang
+  };
+
   var data = new URLSearchParams();
-  Object.keys(body).forEach(function (k) { data.append(k, String(body[k])); });
-  data.append('lang', lang);
-  /* Google Apps Script web apps do not answer CORS requests, so the reply cannot be read: no-cors, and a sent request counts as success. */
-  var gas = /script\.google\.com/.test(FORM_ENDPOINT);
-  fetch(FORM_ENDPOINT, gas ? { method: 'POST', mode: 'no-cors', body: data }
-    : { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(body) })
-    .then(function (r) { if (!gas && !r.ok) throw new Error('bad status'); form.reset(); setType('exhibitor', false); statusEl.textContent = t('msg_ok'); })
-    .catch(function () { statusEl.textContent = t('msg_fail'); });
+
+  Object.keys(payload).forEach(function (key) {
+    data.append(key, payload[key]);
+  });
+
+  // Google Apps Script nécessite ce mode pour cette requête
+  // depuis un site hébergé sur un autre domaine.
+  fetch(FORM_ENDPOINT, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: data
+  })
+  .then(function () {
+    // Attention : no-cors ne permet pas de lire la réponse
+    // ni de confirmer que Google Sheets a enregistré la ligne.
+    form.reset();
+    setType('exhibitor', false);
+    statusEl.textContent = t('msg_ok');
+  })
+  .catch(function (error) {
+    console.error('Erreur lors de l’envoi :', error);
+    statusEl.textContent = t('msg_fail');
+  })
+  .finally(function () {
+    if (submitButton) {
+      submitButton.disabled = false;
+    }
+  });
 });
 
 apply();
