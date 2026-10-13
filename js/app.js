@@ -340,7 +340,7 @@ window.addEventListener('scroll', onScroll, { passive: true });
 
 /* ---------- registration ---------- */
 /* Set FORM_ENDPOINT to a form-handling URL (for example Formspree) once the site is hosted. */
-var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzfiuUajQ7Khf9jSSWANszxRQin_lLqBtHeFxRgZSXCpcEHYDpooxQH1W9I-tmW3IhO/exec';
+var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxlf5LKgYu9JJBFSUXtJmBOrOzrz5UMCL2-qejap_O8ZOnEB3CNIsv2dxIqLdyNEsSlHA/exec';
 var form = $('#reg-form'), statusEl = $('#form-status'), roleSel = $('#f-role');
 function setType(type, focus) {
   roleSel.value = type;
