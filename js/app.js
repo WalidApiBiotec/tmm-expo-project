@@ -111,6 +111,7 @@ en: {
 }
 };
 Object.assign(D.ar, {
+  f_open: 'فتح النموذج في صفحة جديدة',
   ft_org: 'الهيئة المنظمة: متمام',
   nav_nye: 'سهرة رأس السنة', cta_exh: 'سجّل كعارض', chip_date: '29 ديسمبر 2026 – 01 جانفي 2027', save_date: 'احفظ التاريخ',
   lead: 'فضاء يجمع أصحاب المؤسسات ورواد الأعمال وحاملي المشاريع والمستثمرين والعارضين والشركاء، بين التبادل التجاري والتكوين والابتكار.',
@@ -132,6 +133,7 @@ Object.assign(D.ar, {
   ft_line: 'الطبعة الأولى · بني عباس، الجزائر · 29 ديسمبر 2026 – 01 جانفي 2027'
 });
 Object.assign(D.fr, {
+  f_open: 'Ouvrir le formulaire dans une nouvelle page',
   ft_org: 'Organisé par : متمام',
   nav_nye: 'Soirée du Nouvel An', cta_exh: "S'inscrire comme exposant", chip_date: '29 décembre 2026 – 1er janvier 2027', save_date: 'Ajouter à mon agenda',
   lead: "Un espace qui réunit chefs d'entreprise, entrepreneurs, porteurs de projets, investisseurs, exposants et partenaires, entre échanges commerciaux, formation et innovation.",
@@ -153,6 +155,7 @@ Object.assign(D.fr, {
   ft_line: '1re édition · Béni Abbès, Algérie · 29 décembre 2026 – 1er janvier 2027'
 });
 Object.assign(D.en, {
+  f_open: 'Open the form in a new page',
   ft_org: 'Organised by: متمام',
   nav_nye: 'New Year’s Eve', cta_exh: 'Register as exhibitor', chip_date: '29 December 2026 – 1 January 2027', save_date: 'Save the date',
   lead: 'A space that brings together business owners, entrepreneurs, project founders, investors, exhibitors and partners, through trade, training and innovation.',
@@ -301,7 +304,7 @@ function apply() {
   $$('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
   logoBtn.setAttribute('aria-label', t('logo_alt'));
   $('.arch-scene').setAttribute('aria-label', t('arch_alt'));
-  buildRibbon(); renderNums(); renderJoin(false); $('#form-status').textContent = ''; last = {}; tick();
+  buildRibbon(); renderNums(); renderJoin(false); last = {}; tick();
 }
 $$('[data-lang]').forEach(function (b) {
   b.addEventListener('click', function () {
@@ -338,131 +341,7 @@ function onScroll() {
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 
-/* ---------- registration ---------- */
-
-// URL de déploiement de Google Apps Script.
-// Utiliser l'URL complète se terminant par /exec.
-var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxlf5LKgYu9JJBFSUXtJmBOrOzrz5UMCL2-qejap_O8ZOnEB3CNIsv2dxIqLdyNEsSlHA/exec';
-
-var form = $('#reg-form');
-var statusEl = $('#form-status');
-var roleSel = $('#f-role');
-
-function setType(type, focus) {
-  roleSel.value = type;
-
-  $$('.opt').forEach(function (option) {
-    option.setAttribute(
-      'aria-pressed',
-      option.getAttribute('data-type') === type ? 'true' : 'false'
-    );
-  });
-
-  $('#w-needs').hidden = type !== 'exhibitor';
-  $('#w-follow').hidden = type === 'exhibitor';
-
-  statusEl.textContent = '';
-
-  if (focus) {
-    $('#f-name').focus();
-  }
-}
-
-$$('.opt').forEach(function (option) {
-  option.addEventListener('click', function () {
-    setType(option.getAttribute('data-type'), true);
-  });
-});
-
-roleSel.addEventListener('change', function () {
-  setType(roleSel.value, false);
-});
-
-$$('[data-reg]').forEach(function (link) {
-  link.addEventListener('click', function () {
-    setType(link.getAttribute('data-reg'), false);
-  });
-});
-
-setType('exhibitor', false);
-
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  function value(selector) {
-    var element = $(selector);
-    return element ? element.value.trim() : '';
-  }
-
-  var name = value('#f-name');
-  var phone = value('#f-phone');
-  var email = value('#f-email');
-
-  if (!name || (!phone && !email)) {
-    statusEl.textContent = t('msg_empty');
-    return;
-  }
-
-  if (!FORM_ENDPOINT) {
-    statusEl.textContent = t('msg_closed');
-    return;
-  }
-
-  var submitButton = form.querySelector('[type="submit"]');
-
-  if (submitButton) {
-    submitButton.disabled = true;
-  }
-
-  statusEl.textContent = t('msg_sending');
-
-  var payload = {
-    name: name,
-    organisation: value('#f-org'),
-    phone: phone,
-    email: email,
-    type: roleSel.value,
-    description: value('#f-desc'),
-    needs: roleSel.value === 'exhibitor'
-      ? value('#f-needs')
-      : '',
-    sponsor_contact: (
-      roleSel.value !== 'exhibitor' &&
-      $('#f-follow').checked
-    ) ? 'true' : 'false',
-    lang: lang
-  };
-
-  var data = new URLSearchParams();
-
-  Object.keys(payload).forEach(function (key) {
-    data.append(key, payload[key]);
-  });
-
-  // Google Apps Script nécessite ce mode pour cette requête
-  // depuis un site hébergé sur un autre domaine.
-  fetch(FORM_ENDPOINT, {
-    method: 'POST',
-    mode: 'no-cors',
-    body: data
-  })
-  .then(function () {
-    // Attention : no-cors ne permet pas de lire la réponse
-    // ni de confirmer que Google Sheets a enregistré la ligne.
-    form.reset();
-    setType('exhibitor', false);
-    statusEl.textContent = t('msg_ok');
-  })
-  .catch(function (error) {
-    console.error('Erreur lors de l’envoi :', error);
-    statusEl.textContent = t('msg_fail');
-  })
-  .finally(function () {
-    if (submitButton) {
-      submitButton.disabled = false;
-    }
-  });
-});
+/* ---------- registration: Google Form embedded as an iframe in index.html, nothing to do here ---------- */
 
 apply();
 setInterval(tick, 1000);
