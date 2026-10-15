@@ -10,7 +10,9 @@ Files
   js/app.js                  animations, countdown, language switcher, and ALL texts in 3 languages (AR / FR / EN)
   assets/tmm-logo-light.svg  the TMM EXPO logo as a vector (light grey, for dark backgrounds)
   assets/tmm-logo-blue.svg   same logo in brand blue (for light backgrounds)
+  assets/mitmam-logo.svg     the MITMAM organizer logo (redrawn as a vector from the infographic)
   assets/hero-arch.webp      the hero picture (arch + TMM EXPO logo)
+  assets/place-1..3.webp     the Béni Abbès photos of the Location section slider
   assets/favicon.svg         browser tab icon
 
 Brand colours used

@@ -112,7 +112,7 @@ en: {
 };
 Object.assign(D.ar, {
   f_open: 'فتح النموذج في صفحة جديدة',
-  ft_org: 'الهيئة المنظمة: متمام',
+  ft_org: 'الهيئة المنظمة',
   nav_nye: 'سهرة رأس السنة', cta_exh: 'سجّل كعارض', chip_date: '29 ديسمبر 2026 – 01 جانفي 2027', save_date: 'احفظ التاريخ',
   lead: 'فضاء يجمع أصحاب المؤسسات ورواد الأعمال وحاملي المشاريع والمستثمرين والعارضين والشركاء، بين التبادل التجاري والتكوين والابتكار.',
   orb1: '29 ديسمبر', orb2: 'رواد الأعمال', orb3: 'بني عباس',
@@ -134,7 +134,7 @@ Object.assign(D.ar, {
 });
 Object.assign(D.fr, {
   f_open: 'Ouvrir le formulaire dans une nouvelle page',
-  ft_org: 'Organisé par : متمام',
+  ft_org: 'Organisé par',
   nav_nye: 'Soirée du Nouvel An', cta_exh: "S'inscrire comme exposant", chip_date: '29 décembre 2026 – 1er janvier 2027', save_date: 'Ajouter à mon agenda',
   lead: "Un espace qui réunit chefs d'entreprise, entrepreneurs, porteurs de projets, investisseurs, exposants et partenaires, entre échanges commerciaux, formation et innovation.",
   orb1: '29 décembre', orb2: 'Entrepreneurs', orb3: 'Béni Abbès',
@@ -156,7 +156,7 @@ Object.assign(D.fr, {
 });
 Object.assign(D.en, {
   f_open: 'Open the form in a new page',
-  ft_org: 'Organised by: متمام',
+  ft_org: 'Organised by',
   nav_nye: 'New Year’s Eve', cta_exh: 'Register as exhibitor', chip_date: '29 December 2026 – 1 January 2027', save_date: 'Save the date',
   lead: 'A space that brings together business owners, entrepreneurs, project founders, investors, exhibitors and partners, through trade, training and innovation.',
   orb1: '29 December', orb2: 'Entrepreneurs', orb3: 'Béni Abbès',
@@ -176,6 +176,18 @@ Object.assign(D.en, {
   msg_empty: 'Enter your name and a phone number or email, then try again.',
   ft_line: '1st edition · Béni Abbès, Algeria · 29 December 2026 – 1 January 2027'
 });
+Object.assign(D.ar, {"nav_faq": "الأسئلة", "about_title": "تجارة وريادة وابتكار تحت سقف واحد", "jn_title": "مكانك بيننا، زائرًا كنتَ أو عارضًا", "rg_eyebrow": "التسجيل كعارض أو راعٍ", "rg_title": "كن جزءًا من الطبعة الأولى", "rg_p": "اختر نوع مشاركتك واترك بياناتك، وسيتواصل معك فريق التنظيم بالتفاصيل.", "nye_p": "ليلة 31 ديسمبر قد تكون أجمل لحظات المعرض: احتفال، شكر للشركاء، وعدّ تنازلي نحو 2027.", "faq_eyebrow": "الأسئلة الشائعة", "faq_title": "كل ما تريد معرفته", "faq_p": "إجابات سريعة عن المعرض والتسجيل. وإن لم تجد سؤالك، تواصل معنا.", "q1": "ما هو معرض TMM؟", "a1": "معرض TMM للتجارة وريادة الأعمال تنطلق طبعته الأولى في بني عباس من 29 ديسمبر 2026 إلى 1 جانفي 2027، بمشاركة أكثر من 50 عارضًا وجمهور يُتوقع أن يتجاوز 30 ألف زائر.", "q2": "من يمكنه المشاركة؟", "a2": "أصحاب المؤسسات، ورواد الأعمال، وحاملو المشاريع، والمستثمرون، والعارضون والشركاء.", "q3": "كيف أسجّل كعارض؟", "a3": "من قسم التسجيل في هذه الصفحة، اختر «عارض» في نوع المشاركة واملأ النموذج، وسيتواصل معك فريق التنظيم بخصوص المساحة والتجهيزات.", "q4": "كيف أصبح راعيًا أو شريكًا؟", "a4": "من النموذج نفسه اختر «راعٍ» أو «شريك»، وسنتواصل معك بعروض الرعاية والشراكة.", "q5": "هل هناك احتفال برأس السنة؟", "a5": "نعم، سهرة 31 ديسمبر من أبرز لحظات المعرض المقترحة: فقرات موسيقية وترفيهية، وتقديم الرعاة والشركاء، وفضاء للتصوير، وعدّ تنازلي عند منتصف الليل لاستقبال 2027.", "q6": "ما هي مواعيد الاستقبال والدخول؟", "a6": "ستُعلن مواعيد الاستقبال والبرنامج التفصيلي وشروط الدخول قريبًا. تابعنا لتصلك التفاصيل.", "ct_eyebrow": "تواصل معنا", "ct_title": "نسعد بتواصلك", "ct_p": "للاستفسار عن المشاركة أو الرعاية، اختر الطريقة الأنسب لك.", "ct_map": "الموقع على الخريطة", "ct_reg": "نموذج التسجيل", "ct_wa": "واتساب", "ct_mail": "البريد الإلكتروني", "ct_fb": "فيسبوك", "ct_ig": "إنستغرام", "totop": "العودة للأعلى"});
+Object.assign(D.fr, {"nav_faq": "FAQ", "about_title": "Commerce, entrepreneuriat et innovation, sous un même toit", "jn_title": "Votre place est ici, visiteur ou exposant", "rg_eyebrow": "Inscription exposant ou sponsor", "rg_title": "Faites partie de la 1re édition", "rg_p": "Choisissez votre type de participation et laissez vos coordonnées : l'équipe d'organisation vous contactera avec les détails.", "nye_p": "La nuit du 31 décembre pourrait être le plus beau moment du salon : célébration, remerciements aux partenaires et compte à rebours vers 2027.", "faq_eyebrow": "Questions fréquentes", "faq_title": "Tout ce que vous voulez savoir", "faq_p": "Des réponses rapides sur le salon et l'inscription. Une autre question ? Contactez-nous.", "q1": "Qu'est-ce que TMM Expo ?", "a1": "TMM Expo, salon du commerce et de l'entrepreneuriat, lance sa première édition à Béni Abbès du 29 décembre 2026 au 1er janvier 2027, avec plus de 50 exposants et un public attendu à plus de 30 000 visiteurs.", "q2": "Qui peut participer ?", "a2": "Les chefs d'entreprise, entrepreneurs, porteurs de projets, investisseurs, exposants et partenaires.", "q3": "Comment m'inscrire comme exposant ?", "a3": "Dans la section Inscription de cette page, choisissez « Exposant » comme type de participation et remplissez le formulaire. L'équipe vous contactera au sujet de l'espace et des équipements.", "q4": "Comment devenir sponsor ou partenaire ?", "a4": "Dans le même formulaire, choisissez « Sponsor » ou « Partenaire » : nous vous contacterons avec les offres de sponsoring et de partenariat.", "q5": "Y a-t-il une célébration du Nouvel An ?", "a5": "Oui, la soirée du 31 décembre fait partie des temps forts proposés : animations musicales, présentation des sponsors et partenaires, espace photo et compte à rebours de minuit pour accueillir 2027.", "q6": "Quels sont les horaires et les conditions d'entrée ?", "a6": "Les horaires d'accueil, le programme détaillé et les conditions d'entrée seront annoncés prochainement. Suivez-nous pour les recevoir.", "ct_eyebrow": "Contact", "ct_title": "Nous sommes à votre écoute", "ct_p": "Pour une question sur la participation ou le sponsoring, choisissez le moyen qui vous convient.", "ct_map": "Lieu sur la carte", "ct_reg": "Formulaire d'inscription", "ct_wa": "WhatsApp", "ct_mail": "E-mail", "ct_fb": "Facebook", "ct_ig": "Instagram", "totop": "Haut de page"});
+Object.assign(D.en, {"nav_faq": "FAQ", "about_title": "Trade, entrepreneurship and innovation under one roof", "jn_title": "Your place is here, as a visitor or an exhibitor", "rg_eyebrow": "Exhibitor or sponsor registration", "rg_title": "Be part of the first edition", "rg_p": "Choose how you want to take part and leave your details. The organising team will contact you with the next steps.", "nye_p": "The night of 31 December could be the best moment of the expo: a celebration, thanks to partners and a countdown to 2027.", "faq_eyebrow": "FAQ", "faq_title": "Everything you want to know", "faq_p": "Quick answers about the expo and registration. Can't find yours? Get in touch.", "q1": "What is TMM Expo?", "a1": "TMM Expo, the trade and entrepreneurship expo, launches its first edition in Béni Abbès from 29 December 2026 to 1 January 2027, with more than 50 exhibitors and an audience expected to exceed 30,000 visitors.", "q2": "Who can take part?", "a2": "Business owners, entrepreneurs, project founders, investors, exhibitors and partners.", "q3": "How do I register as an exhibitor?", "a3": "In the Registration section of this page, choose \"Exhibitor\" as the type of participation and fill in the form. The team will contact you about space and equipment.", "q4": "How do I become a sponsor or partner?", "a4": "In the same form, choose \"Sponsor\" or \"Partner\" and we will contact you with sponsorship and partnership offers.", "q5": "Is there a New Year's celebration?", "a5": "Yes, the evening of 31 December is among the proposed highlights: music and entertainment, a thank-you to sponsors and partners, a photo space and a midnight countdown to welcome 2027.", "q6": "What are the opening hours and entry conditions?", "a6": "Opening hours, the detailed programme and entry conditions will be announced soon. Follow us to receive them.", "ct_eyebrow": "Contact", "ct_title": "We'd love to hear from you", "ct_p": "For questions about taking part or sponsoring, pick the way that suits you best.", "ct_map": "Location on the map", "ct_reg": "Registration form", "ct_wa": "WhatsApp", "ct_mail": "Email", "ct_fb": "Facebook", "ct_ig": "Instagram", "totop": "Back to top"});
+Object.assign(D.ar, {"ph1": "بني عباس عند الغروب", "ph2": "بني عباس ليلًا", "ph3": "مدخل بني عباس", "skip": "تخطَّ إلى المحتوى", "menu": "القائمة"});
+Object.assign(D.fr, {"ph1": "Béni Abbès au coucher du soleil", "ph2": "Béni Abbès la nuit", "ph3": "L'entrée de Béni Abbès", "skip": "Aller au contenu", "menu": "Menu"});
+Object.assign(D.en, {"ph1": "Béni Abbès at sunset", "ph2": "Béni Abbès at night", "ph3": "The entrance to Béni Abbès", "skip": "Skip to content", "menu": "Menu"});
+Object.assign(D.ar, {"theme": "تبديل المظهر"});
+Object.assign(D.fr, {"theme": "Changer l'apparence"});
+Object.assign(D.en, {"theme": "Switch theme"});
+Object.assign(D.ar, {"st_inv": "مستثمر", "obj_eyebrow": "أهداف المعرض", "obj_title": "ما الذي نسعى إليه", "obj1": "التعرف على سوق اقتصادي واستثماري شاغل، وفرصة الشراكة في المبادرات الاقتصادية والتنمية المحلية.", "obj2": "استثمار الحركية السياحية نهاية السنة ببني عباس في خلق آفاق استثمارية وشراكات استراتيجية وبحث فرص التعاون الاقتصادي.", "about_p2": "يلتقي فيه أكثر من 50 عارضًا من التجار والشركات وأصحاب المشاريع مع جمهور يُتوقع أن يتجاوز 30 ألف زائر، إلى جانب 2000 مستثمر، ويقرّب الحلول الرقمية من النشاط التجاري اليومي.", "a1": "معرض TMM للتجارة وريادة الأعمال تنطلق طبعته الأولى في بني عباس من 29 ديسمبر 2026 إلى 1 جانفي 2027، بمشاركة أكثر من 50 عارضًا، وجمهور يُتوقع أن يتجاوز 30 ألف زائر، و2000 مستثمر.", "ft_org": "الهيئة المنظمة"});
+Object.assign(D.fr, {"st_inv": "investisseurs", "obj_eyebrow": "Objectifs", "obj_title": "Notre ambition", "obj1": "Découvrir un marché économique et d'investissement dynamique, et saisir des occasions de partenariat dans les initiatives économiques et le développement local.", "obj2": "Tirer parti de l'élan touristique de fin d'année à Béni Abbès pour créer des perspectives d'investissement, nouer des partenariats stratégiques et explorer des pistes de coopération économique.", "about_p2": "Plus de 50 exposants, commerçants, entreprises et porteurs de projets, y rencontrent un public attendu à plus de 30 000 visiteurs, ainsi que 2 000 investisseurs. Le salon rapproche les solutions numériques de l'activité commerciale quotidienne.", "a1": "TMM Expo, salon du commerce et de l'entrepreneuriat, lance sa première édition à Béni Abbès du 29 décembre 2026 au 1er janvier 2027, avec plus de 50 exposants, un public attendu à plus de 30 000 visiteurs et 2 000 investisseurs.", "ft_org": "Organisé par"});
+Object.assign(D.en, {"st_inv": "investors", "obj_eyebrow": "Goals", "obj_title": "What we aim for", "obj1": "To discover a thriving economic and investment market, and to find partnership opportunities in economic initiatives and local development.", "obj2": "To harness Béni Abbès's end-of-year tourism momentum to open up investment prospects, build strategic partnerships and explore economic cooperation.", "about_p2": "More than 50 exhibitors, from traders and companies to project founders, meet an audience expected to exceed 30,000 visitors, along with 2,000 investors. The expo brings digital solutions closer to everyday business.", "a1": "TMM Expo, the trade and entrepreneurship expo, launches its first edition in Béni Abbès from 29 December 2026 to 1 January 2027, with more than 50 exhibitors, an audience expected to exceed 30,000 visitors and 2,000 investors.", "ft_org": "Organised by"});
 var LANGS = { ar: { dir: 'rtl', loc: 'en-US' }, fr: { dir: 'ltr', loc: 'fr-FR' }, en: { dir: 'ltr', loc: 'en-US' } };
 
 var lang = 'ar';
@@ -279,7 +291,7 @@ function renderJoin(animate) {
   var to = tab === 'v' ? 50 : 30000;
   if (animate) countUp($('#join-num'), to, '+', 1100); else $('#join-num').textContent = fmt(to) + '+';
   $$('[data-tab]').forEach(function (b) { b.setAttribute('aria-selected', b.getAttribute('data-tab') === tab ? 'true' : 'false'); });
-  $('#join-panel').setAttribute('aria-labelledby', 'tab-' + tab);
+  $('#join-panel').setAttribute('aria-labelledby', 'tab-' + tab); if (typeof movePill === 'function') movePill();
 }
 $$('[data-tab]').forEach(function (b) { b.addEventListener('click', function () { if (tab !== b.getAttribute('data-tab')) { tab = b.getAttribute('data-tab'); renderJoin(true); } }); });
 
@@ -303,8 +315,8 @@ function apply() {
   $$('[data-i]').forEach(function (el) { el.textContent = t(el.getAttribute('data-i')); });
   $$('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
   logoBtn.setAttribute('aria-label', t('logo_alt'));
-  $('.arch-scene').setAttribute('aria-label', t('arch_alt'));
-  buildRibbon(); renderNums(); renderJoin(false); last = {}; tick();
+  $$('[data-alt]').forEach(function (el) { el.alt = t(el.getAttribute('data-alt')); }); $('#menu-btn').setAttribute('aria-label', t('menu')); $('#theme-btn').setAttribute('aria-label', t('theme'));
+  setForm(); buildContact(); totop.setAttribute('aria-label', t('totop')); buildRibbon(); renderNums(); renderJoin(false); last = {}; tick();
 }
 $$('[data-lang]').forEach(function (b) {
   b.addEventListener('click', function () {
@@ -316,8 +328,8 @@ $$('[data-lang]').forEach(function (b) {
 
 /* ---------- reveal, spotlight, progress ---------- */
 if ('IntersectionObserver' in window) {
-  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
-  $$('.rv').forEach(function (el) { io.observe(el); });
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); var tg = e.target; setTimeout(function () { tg.style.transitionDelay = ''; }, 1100); } }); }, { threshold: .12 });
+  $$('.rv, .sec h2').forEach(function (el) { io.observe(el); });
   var io2 = new IntersectionObserver(function (es) {
     es.forEach(function (e) {
       if (e.isIntersecting && !numsShown) {
@@ -327,7 +339,7 @@ if ('IntersectionObserver' in window) {
     });
   }, { threshold: .4 });
   io2.observe($('.stats ul'));
-} else { $$('.rv').forEach(function (el) { el.classList.add('in'); }); }
+} else { $$('.rv, .sec h2').forEach(function (el) { el.classList.add('in'); }); }
 $$('.card').forEach(function (c) {
   c.addEventListener('pointermove', function (e) { var r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
 });
@@ -336,13 +348,216 @@ function onScroll() {
   if (raf) return;
   raf = requestAnimationFrame(function () {
     raf = 0; var h = document.documentElement.scrollHeight - window.innerHeight;
-    prog.style.setProperty('--p', h > 0 ? Math.min(1, window.scrollY / h).toFixed(4) : 0);
+    prog.style.setProperty('--p', h > 0 ? Math.min(1, window.scrollY / h).toFixed(4) : 0); spy();
   });
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 
-/* ---------- registration: Google Form embedded as an iframe in index.html, nothing to do here ---------- */
+/* ---------- contact: fill in the channels you have (empty ones are hidden) ---------- */
+var CONTACT = { whatsapp: '', email: 'itmam.dz@gmail.com', phones: ['0665904586', '0665089411'], facebook: '', instagram: '' };
+var IC = {
+  map: '<path d="M12 21s-7-6.2-7-11.2A7 7 0 0119 9.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.6"/>',
+  reg: '<rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V3h6v1M9 11h6M9 15h6"/>',
+  wa: '<path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-3.9-1z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.4-2-1-1 .7a4 4 0 01-2-2l.7-1-1-2z"/>',
+  tel: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/>',
+  fb: '<path d="M14 8h2V4h-2.5A3.5 3.5 0 0010 7.5V10H8v4h2v6h4v-6h2.2l.6-4H14V8z"/>',
+  ig: '<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6"/>'
+};
+function fmtPhone(n) { return n.replace(/(\d{2})(?=\d)/g, '$1 '); }
+function buildContact() {
+  var ul = $('#ct-list'); if (ul) ul.innerHTML = '';
+  var items = [{ ic: 'map', href: 'https://www.google.com/maps/search/?api=1&query=B%C3%A9ni+Abb%C3%A8s%2C+Algeria', key: 'ct_map' }, { ic: 'reg', href: '#register', key: 'ct_reg' }];
+  (CONTACT.phones || []).forEach(function (p) { items.push({ ic: 'tel', href: 'tel:+213' + p.slice(1), text: fmtPhone(p), ltr: true }); });
+  if (CONTACT.whatsapp) items.push({ ic: 'wa', href: 'https://wa.me/' + CONTACT.whatsapp.replace(/\D/g, ''), key: 'ct_wa' });
+  if (CONTACT.email) items.push({ ic: 'mail', href: 'mailto:' + CONTACT.email, text: CONTACT.email, ltr: true });
+  if (CONTACT.facebook) items.push({ ic: 'fb', href: CONTACT.facebook, key: 'ct_fb' });
+  if (CONTACT.instagram) items.push({ ic: 'ig', href: CONTACT.instagram, key: 'ct_ig' });
+  if (ul) items.forEach(function (it) {
+    var a = document.createElement('a'); a.className = 'ct-btn'; a.href = it.href;
+    if (/^https?:/.test(it.href)) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    a.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true">' + IC[it.ic] + '</svg><span></span>';
+    var sp = a.lastChild; sp.textContent = it.text || t(it.key); if (it.ltr) sp.setAttribute('dir', 'ltr');
+    ul.appendChild(a);
+  });
+  var ol = $('#org-links'); if (ol) {
+    ol.innerHTML = '';
+    var l = [];
+    if (CONTACT.email) l.push(['mailto:' + CONTACT.email, CONTACT.email]);
+    (CONTACT.phones || []).forEach(function (p) { l.push(['tel:+213' + p.slice(1), fmtPhone(p)]); });
+    l.forEach(function (x) { var a = document.createElement('a'); a.href = x[0]; a.textContent = x[1]; ol.appendChild(a); });
+  }
+}
 
-apply();
+/* ---------- extras: nav highlight, back to top, card tilt, magnetic buttons, hero spotlight, staggered reveal ---------- */
+var spyIds = ['about', 'nye', 'place', 'join', 'faq'], totop = $('#totop');
+function spy() {
+  var cur = '', y = window.innerHeight * .4;
+  spyIds.forEach(function (id) { var el = document.getElementById(id); if (el && el.getBoundingClientRect().top < y && el.getBoundingClientRect().bottom > y) cur = id; });
+  $$('.nav a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + cur); });
+  totop.classList.toggle('show', window.scrollY > 900);
+}
+totop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }); });
+if (fine && !reduced) {
+  $$('.card').forEach(function (c) {
+    c.addEventListener('pointermove', function (e) { var r = c.getBoundingClientRect(); c.style.setProperty('--ry', (((e.clientX - r.left) / r.width - .5) * 7).toFixed(2) + 'deg'); c.style.setProperty('--rx', ((.5 - (e.clientY - r.top) / r.height) * 7).toFixed(2) + 'deg'); });
+    c.addEventListener('pointerleave', function () { c.style.setProperty('--rx', '0deg'); c.style.setProperty('--ry', '0deg'); });
+  });
+  $$('.hero .btn').forEach(function (b) {
+    b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.translate = ((e.clientX - r.left - r.width / 2) * .14).toFixed(1) + 'px ' + ((e.clientY - r.top - r.height / 2) * .22).toFixed(1) + 'px'; });
+    b.addEventListener('pointerleave', function () { b.style.translate = ''; });
+  });
+  var hero = $('#hero');
+  hero.addEventListener('pointermove', function (e) { var r = hero.getBoundingClientRect(); hero.style.setProperty('--sx', (e.clientX - r.left) + 'px'); hero.style.setProperty('--sy', (e.clientY - r.top) + 'px'); });
+}
+$$('.bento .rv, .faq-list .rv').forEach(function (el, i) { el.style.transitionDelay = ((i % 3) * 90) + 'ms'; });
+
+/* ---------- place photo slider ---------- */
+(function () {
+  var box = $('#scene'), slides = $$('.slide', box), dots = $$('.sd', box), cur = 0, timer = null;
+  function show(n) {
+    cur = (n + slides.length) % slides.length;
+    slides.forEach(function (s, i) { s.classList.toggle('on', i === cur); });
+    dots.forEach(function (d, i) { d.classList.toggle('on', i === cur); d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
+  }
+  function play() { if (reduced) return; stop(); timer = setInterval(function () { show(cur + 1); }, 5200); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  dots.forEach(function (d) { d.addEventListener('click', function () { show(+d.getAttribute('data-n')); play(); }); });
+  box.addEventListener('pointerenter', stop); box.addEventListener('pointerleave', play);
+  box.addEventListener('focusin', stop); box.addEventListener('focusout', play);
+  var x0 = null;
+  box.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener('touchend', function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) { show(cur + (dx < 0 ? 1 : -1) * (LANGS[lang].dir === 'rtl' ? -1 : 1)); play(); } x0 = null; });
+  show(0); play();
+})();
+
+/* ---------- mobile menu ---------- */
+(function () {
+  var btn = $('#menu-btn'), nav = $('#nav');
+  function set(open) { nav.classList.toggle('open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  btn.addEventListener('click', function () { set(!nav.classList.contains('open')); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  document.addEventListener('click', function (e) { if (!e.target.closest('.bar')) set(false); });
+})();
+
+/* ---------- v4: intro, parallax, tabs pill, ripples, fireworks ---------- */
+(function () {
+  var page = $('.page'), ld = $('.loader');
+  function ready() { page.classList.add('ready'); }
+  if (reduced) ready(); else setTimeout(ready, 1150);
+  setTimeout(function () { if (ld) ld.remove(); }, 2300);
+})();
+var heroEl = $('#hero');
+function parallax() { if (!reduced) heroEl.style.setProperty('--scr', Math.min(1, window.scrollY / Math.max(1, heroEl.offsetHeight)).toFixed(3)); }
+window.addEventListener('scroll', parallax, { passive: true });
+function movePill() {
+  var tabs = $('.tabs'), on = $('.tabs [aria-selected="true"]');
+  if (!tabs || !on) return;
+  tabs.style.setProperty('--x', on.offsetLeft + 'px'); tabs.style.setProperty('--w', on.offsetWidth + 'px');
+}
+window.addEventListener('resize', movePill);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(movePill);
+document.addEventListener('pointerdown', function (e) {
+  var b = e.target.closest && e.target.closest('.btn'); if (!b || reduced) return;
+  var r = b.getBoundingClientRect(), sz = Math.max(r.width, r.height), sp = document.createElement('i');
+  sp.className = 'rp'; sp.style.cssText = 'width:' + sz + 'px;height:' + sz + 'px;left:' + (e.clientX - r.left - sz / 2) + 'px;top:' + (e.clientY - r.top - sz / 2) + 'px';
+  b.appendChild(sp); setTimeout(function () { sp.remove(); }, 700);
+});
+(function () {
+  var panel = $('.nye-panel'); if (!panel || reduced) return;
+  var cv = document.createElement('canvas'); cv.className = 'fx'; cv.setAttribute('aria-hidden', 'true'); panel.insertBefore(cv, panel.firstChild);
+  var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2), parts = [], rockets = [], run = false, last = 0, nextL = 0;
+  var cols = ['#FF8A4C', '#7FE3D4', '#ffffff', '#FFD2A8', '#3EBDAD'];
+  function size() { var r = panel.getBoundingClientRect(); W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  function burst(x, y) {
+    var n = 48, c = cols[(Math.random() * cols.length) | 0], c2 = cols[(Math.random() * cols.length) | 0];
+    for (var i = 0; i < n; i++) { var a = i / n * Math.PI * 2 + Math.random() * .1, sp = 1.1 + Math.random() * 2.7; parts.push({ x: x, y: y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, l: 1, c: i % 3 ? c : c2, s: 1.5 + Math.random() * 1.5 }); }
+  }
+  function launch() { rockets.push({ x: W * (.12 + Math.random() * .76), y: H, vy: -(5 + Math.random() * 2.5), ty: H * (.14 + Math.random() * .38) }); }
+  function frame(t) {
+    if (!run) return;
+    var dt = Math.min(t - last, 40) / 16.7; last = t;
+    if (t > nextL) { launch(); nextL = t + 1300 + Math.random() * 1500; }
+    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = 'rgba(0,0,0,.2)'; ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'lighter';
+    rockets = rockets.filter(function (r) {
+      r.y += r.vy * dt; ctx.fillStyle = '#FFD2A8'; ctx.beginPath(); ctx.arc(r.x, r.y, 2, 0, 6.3); ctx.fill();
+      if (r.y <= r.ty) { burst(r.x, r.y); return false; } return true;
+    });
+    parts = parts.filter(function (p) {
+      p.x += p.vx * dt; p.y += p.vy * dt; p.vy += .035 * dt; p.vx *= .99; p.l -= .013 * dt;
+      if (p.l <= 0) return false;
+      ctx.globalAlpha = p.l; ctx.fillStyle = p.c; ctx.beginPath(); ctx.arc(p.x, p.y, p.s * p.l + .3, 0, 6.3); ctx.fill(); ctx.globalAlpha = 1; return true;
+    });
+    requestAnimationFrame(frame);
+  }
+  function start() { if (run) return; run = true; size(); last = performance.now(); nextL = last + 400; requestAnimationFrame(frame); }
+  function stop() { run = false; ctx.clearRect(0, 0, W, H); parts = []; rockets = []; }
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es[0].isIntersecting ? start() : stop(); }, { threshold: .15 }).observe(panel);
+  window.addEventListener('resize', function () { if (run) size(); });
+  panel.addEventListener('pointerdown', function (e) { if (e.target.closest('a,button') || !run) return; var r = panel.getBoundingClientRect(); burst(e.clientX - r.left, e.clientY - r.top); });
+})();
+
+/* ---------- theme toggle, rising sparks, ribbon skew, cursor ring ---------- */
+(function () {
+  var btn = $('#theme-btn'), root = document.documentElement;
+  function cur() { return root.getAttribute('data-theme') || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }
+  function set(th, save) {
+    root.setAttribute('data-theme', th); btn.classList.toggle('dark', th === 'dark'); btn.setAttribute('aria-pressed', th === 'dark' ? 'true' : 'false');
+    if (save) { try { localStorage.setItem('tmm-theme', th); } catch (e) {} }
+  }
+  var saved = null; try { saved = localStorage.getItem('tmm-theme'); } catch (e) {}
+  if (saved === 'dark' || saved === 'light') set(saved, false); else btn.classList.toggle('dark', cur() === 'dark');
+  btn.addEventListener('click', function () { set(cur() === 'dark' ? 'light' : 'dark', true); });
+})();
+(function () {
+  if (reduced) return;
+  var host = $('#hero .aurora'), cols = ['#FF8A4C', '#3EBDAD', '#2F9FD0'];
+  for (var i = 0; i < 16; i++) {
+    var e = document.createElement('i'); e.className = 'fz';
+    e.style.setProperty('--l', (Math.random() * 100).toFixed(1) + '%'); e.style.setProperty('--s', (4 + Math.random() * 6).toFixed(1) + 'px');
+    e.style.setProperty('--t', (11 + Math.random() * 12).toFixed(1) + 's'); e.style.setProperty('--d', (-Math.random() * 20).toFixed(1) + 's');
+    e.style.setProperty('--x', ((Math.random() - .5) * 160).toFixed(0) + 'px'); e.style.setProperty('--c', cols[i % cols.length]);
+    host.appendChild(e);
+  }
+  var rib = $('.ribbon'), lastY = window.scrollY, skT = 0, busy = false;
+  window.addEventListener('scroll', function () {
+    if (busy) return; busy = true;
+    requestAnimationFrame(function () {
+      busy = false; var y = window.scrollY, v = Math.max(-7, Math.min(7, (y - lastY) * .18)); lastY = y;
+      rib.style.setProperty('--sk', v.toFixed(2) + 'deg');
+      clearTimeout(skT); skT = setTimeout(function () { rib.style.setProperty('--sk', '0deg'); }, 140);
+    });
+  }, { passive: true });
+})();
+(function () {
+  if (!fine || reduced) return;
+  var c = document.createElement('div'); c.className = 'cursor'; c.setAttribute('aria-hidden', 'true'); document.body.appendChild(c);
+  var x = 0, y = 0, tx = 0, ty = 0, started = false;
+  document.addEventListener('pointermove', function (e) {
+    tx = e.clientX; ty = e.clientY;
+    if (!started) { started = true; x = tx; y = ty; c.classList.add('on'); loop(); }
+    c.classList.toggle('hot', !!e.target.closest('a, button, summary, .sd'));
+  });
+  document.addEventListener('pointerleave', function () { c.classList.remove('on'); });
+  document.addEventListener('pointerenter', function () { if (started) c.classList.add('on'); });
+  function loop() { x += (tx - x) * .2; y += (ty - y) * .2; c.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0)'; requestAnimationFrame(loop); }
+})();
+
+/* ---------- registration: Google Forms embedded as an iframe; one form per language ---------- */
+/* ar = Arabic form. fr and en = French form. Replace these URLs to change a form. */
+var FORMS = {
+  ar: 'https://docs.google.com/forms/d/e/1FAIpQLSdCtOHFD5SpC9Ny_es93RSztIOSo26HDTxzkXWelz_B1CU5pg/viewform',
+  fr: 'https://docs.google.com/forms/d/e/1FAIpQLScpBrJNt6-i3MHDVNiuK0lr5bpY-l3dS1GGFm6HXrxObnbnaw/viewform',
+  en: 'https://docs.google.com/forms/d/e/1FAIpQLSfNOMRnbf2b1__ECZVvu0AQw5bcnUgkoJbBJzvtPIv_-1LWyg/viewform'
+};
+function setForm() {
+  var f = $('#gf-frame'), a = $('#gf-open'), u = FORMS[lang] || FORMS.fr;
+  if (a) a.href = u;
+  if (f && f.getAttribute('src') !== u + '?embedded=true') f.setAttribute('src', u + '?embedded=true');
+}
+
+apply(); spy(); movePill();
 setInterval(tick, 1000);
 })();
